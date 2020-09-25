@@ -1,0 +1,9 @@
+<form #listForm="ngForm" (submit)="addWork(listForm)">
+ <input 
+ matInput 
+ placeholder="Ex. Pizza" 
+ name="title" 
+ ngModel
+ required>
+ <button mat-raised-button color="primary" type="submit">Enter</button>
+</form>
