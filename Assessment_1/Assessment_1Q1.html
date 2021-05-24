@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Search: <input type="text" onblur="searchText(this.value)"><br><br>
+    <span id="abc"></span>
+
+    <script>
+    function searchText(val)
+    {
+        
+        if(val.substring(0,4)=="Java")
+        {
+            document.getElementById("abc").innerHTML=val;
+        }
+        else
+        {
+            document.getElementById("abc").innerHTML="False search";
+        }
+    }
+    </script>
+</body>
+</html>

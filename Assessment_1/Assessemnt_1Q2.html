@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function searchScript(val)
+        {
+            
+            if(val.substring(4,10)=='Script')
+            {
+                var a = val.replace(val.substring(4,10), "");
+            return a;
+            }
+            else
+            {
+                return val;
+            }
+
+        }
+
+         console.log(searchScript("TypeScript"));
+
+         console.log(searchScript("hbhcbTypeScript"));
+         console.log(searchScript("faceScript"));
+         console.log(searchScript("facesScript"));
+
+    </script>
+</body>
+</html>
